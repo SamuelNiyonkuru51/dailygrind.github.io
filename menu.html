@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu Page</title>
+	<style type="text/css">
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+	    .header {
+            background-color: #ffffff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+           width: 150px;
+           height: auto;
+           border-radius: 15px;
+      }
+        .section-title {
+            text-align: center;
+            color: black;
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+       .nav {
+        display: flex;
+        gap: 20px;
+      }
+      .nav a {
+        color: #800080;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+    .nav a:hover {
+        background-color: #800080;
+        color: #ffffff;
+    }
+		h1 {
+			text-align: center;
+			color: #800080;
+		}
+		select {
+			font-size: 18px;
+			padding: 5px;
+			margin: 20px;
+		}
+		.item {
+      width: 250px;
+      margin: 20px;
+      text-align: center;
+      background-color: #800080;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: flex-start;
+		}
+		.item {
+			width: 250px;
+			margin: 20px;
+			text-align: center;
+		}
+		.item img {
+			height: 150px;
+			width: 200px;
+			object-fit: cover;
+			border-radius: 10px;
+			margin-bottom: 10px;
+		}
+		.item h3 {
+			color: white;
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		.item p {
+			color: white;
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+    .footer {
+        background-color: #800080;
+        color: #ffffff;
+        padding: 40px;
+        margin-top: 20px;
+        text-align: center;
+      }
+      .footer p {
+        margin: 0;
+        font-size: 18px;
+      }
+      .order{
+        background-color: white;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 15px;
+        font-size: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        width: 140px;
+        height: 45px;
+      }
+	</style>
+</head>
+<body>
+	<header class="header">
+      <img src="logo.png" alt="The Daily Grind" class="logo">
+      <nav class="nav">
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+	<h1>Menu Page</h1>
+	<select id="menu">
+		<option value="breakfast">Breakfast</option>
+		<option value="lunch">Lunch</option>
+		<option value="dinner">Dinner</option>
+	</select>
+	<div class="container">
+    <div class="item breakfast">
+      <h2 class="section-title">Breakfast List</h2>
+      <img src="breakfast1.jpg" alt="Breakfast Option 1">
+      <h3>$15</h3>
+      <p>Fried eggs, bread and tea</p>
+      <button type="submit" class="order">Order now</button>
+         </div>
+    <div class="item breakfast">
+      <h2 class="section-title">Breakfast List</h2>
+      <img src="breakfast2.jpg" alt="Breakfast Option 2">
+      <h3>$10</h3>
+      <p>Croissant and Coffee</p>
+      <button type="submit" class="order">Order now</button>
+    </div>
+    <div class="item breakfast">
+      <h2 class="section-title">Breakfast List</h2>
+      <img src="breakfast4.jpg" alt="Breakfast Option 2">
+      <h3>$15</h3>
+      <p>Berry waffles and juice</p>
+      <button type="submit" class="order">Order now</button>
+    </div>
+    <div class="item breakfast">
+      <h2 class="section-title">Breakfast List</h2>
+      <img src="breakfast3.jpg" alt="Breakfast Option 3">
+      <h3>2$0</h3>
+      <p>Sausage, fried eggs and tea</p>
+      <button type="submit" class="order">Order now</button>
+    </div>
+
+    <div class="item lunch">
+      <h2 class="section-title">Lunch List</h2>
+      <img src="lunch1.jpg" alt="Lunch Option 1">
+      <h3>$35</h3>
+      <p>Rice and chicken</p>
+      <button type="submit" class="order">Order now</button>
+    </div>
+    <div class="item lunch">
+      <h2 class="section-title">Lunch List</h2>
+      <img src="lunch2.jpg" alt="Lunch Option 2">
+      <h3>$40</h3>
+      <p>Fried crispy fish</p>
+      <button type="submit" class="order">Order now</button>
+    </div>
+    <div class="item lunch">
+      <h2 class="section-title">Lunch List</h2>
+      <img src="lunch3.jpg" alt="Lunch Option 3">
+      <h3>$40</h3>
+      <p>Chips and steak</p>
+      <button type="submit" class="order">Order now</button>
+    </div>
+    <div class="item lunch">
+      <h2 class="section-title">Lunch List</h2>
+      <img src="lunch4.jpg" alt="Lunch Option 3">
+      <h3>$40</h3>
+      <p>Roasted Sweet Potatoes</p>
+      <button type="submit" class="order">Order now</button>
+    </div>
+
+    <div class="item dinner">
+      <h2 class="section-title">Dinner List</h2>
+      <img src="dinner1.jpg" alt="Dinner Option 1">
+      <h3>$45</h3>
+      <p>spaghetti bolognese</p>
+      <button type="submit" class="order">Order now</button>
+    </div>
+    <div class="item dinner">
+      <h2 class="section-title">Dinner List</h2>
+      <img src="dinner2.jpg" alt="Dinner Option 2">
+      <h3>$35</h3>
+      <p>spice grilled salad</p>
+      <button type="submit" class="order">Order now</button>
+    </div>
+    <div class="item dinner">
+      <h2 class="section-title">Dinner List</h2>
+      <img src="dinner4.jpg" alt="Dinner Option 2">
+      <h3>$40</h3>
+      <p>Roasted pork and potatoes</p>
+      <button type="submit" class="order">Order now</button>
+    </div>
+    <div class="item dinner">
+      <h2 class="section-title">Dinner List</h2>
+      <img src="dinner3.jpg" alt="Dinner Option 3">
+      <h3>$40</h3>
+      <p>Medium spicy smashed beef</p>
+      <button type="submit" class="order">Order now</button>
+    </div>
+  </div>
+
+<script>
+    // JavaScript code to show/hide items based on menu selection
+    const menuSelect = document.getElementById('menu');
+    const items = document.querySelectorAll('.item');
+
+    menuSelect.addEventListener('change', function() {
+      const selectedOption = this.value;
+      items.forEach(function(item) {
+        item.style.display = 'none';
+      });
+      document.querySelectorAll('.' + selectedOption).forEach(function(item) {
+        item.style.display = 'block';
+      });
+    });
+  </script>
+
+<footer class="footer">
+  <p>© 2023 The Daily Grind. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
